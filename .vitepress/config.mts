@@ -12,8 +12,7 @@ export default defineConfig({
     nav: nav(),
     logo: { src: './logo.ico', width: 30, height: 30 },
     sidebar: {
-      '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/reference/': { base: '/reference/', items: sidebarReference() }
+      '/': { base: '/', items: sidebarGuide() }
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
@@ -25,13 +24,11 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: '指引',
-      link: '/guide/introduction',
-      activeMatch: '/guide/'
+      link: './introduction'
     },
     {
       text: '更新日志',
-      link: 'https://xtspace.yuque.com/fyho0s/kc12yl',
-      activeMatch: '/reference/'
+      link: 'https://xtspace.yuque.com/fyho0s/kc12yl'
     }
   ]
 }

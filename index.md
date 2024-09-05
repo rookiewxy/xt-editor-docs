@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/introduction
+      link: ./introduction
     - theme: alt
       text: 定制开发
       link: ./code.jpg
