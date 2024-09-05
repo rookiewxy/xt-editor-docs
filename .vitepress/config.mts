@@ -1,7 +1,7 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: "./",
+  base: "/xt-editor-docs/",
   title: '巡天科技',
   lang: 'zh-Hans',
   description: "巡天科技说明文档",
