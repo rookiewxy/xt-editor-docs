@@ -12,8 +12,8 @@ export default defineConfig({
     nav: nav(),
     logo: { src: './logo.ico', width: 30, height: 30 },
     sidebar: {
-      '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/reference/': { base: '/reference/', items: sidebarReference() }
+      '/guide/': { base: '/', items: sidebarGuide() },
+      '/reference/': { base: '/', items: sidebarReference() }
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
