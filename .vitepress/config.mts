@@ -6,11 +6,11 @@ export default defineConfig({
   lang: 'zh-Hans',
   description: "巡天科技说明文档",
   head: [
-    ['link', { rel: 'icon', type: 'image/ico', href: '/public/logo.ico' }]
+    ['link', { rel: 'icon', type: 'image/ico', href: './logo.ico' }]
   ],
   themeConfig: {
     nav: nav(),
-    logo: { src: '/public/logo.ico', width: 30, height: 30 },
+    logo: { src: './logo.ico', width: 30, height: 30 },
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
       '/reference/': { base: '/reference/', items: sidebarReference() }

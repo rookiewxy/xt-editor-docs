@@ -5,9 +5,9 @@ hero:
   name: "XTSPACE"
   text: "专注于数字孪生低代码平台的开发"
   tagline: 一款易上手、易搭建的低代码平台
-  icon: ../logo.ico
+  icon: ./logo.ico
   image:
-    src: /public/640.gif
+    src: ./640.gif
     alt: 巡天科技
   actions:
     - theme: brand
@@ -15,7 +15,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: 定制开发
-      link: /public/code.jpg
+      link: ./code.jpg
     - theme: alt
       text: 免费体验
       link: https://bi.xtspace.cn/#/login
