@@ -14,9 +14,27 @@ export default defineConfig({
     sidebar: {
       '/': { base: '/', items: sidebarGuide() }
     },
+    outline: {
+      label: '页面导航'
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    footer: {
+      message: '',
+      copyright: 'Copyright © 2024-杭州巡天科技有限公司'
+    },
+    // lastUpdated: {
+    //   text: '最后更新于',
+    //   formatOptions: {
+    //     dateStyle: 'short',
+    //     timeStyle: 'medium'
+    //   }
+    // }
   }
 })
 
@@ -37,25 +55,16 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '指引',
+      text: '引导',
       collapsed: false,
       items: [
-        { text: '介绍', link: 'introduction' }
+        { text: '平台介绍', link: 'introduction' },
+        { text: '快速开始', link: 'quick-start' }
       ]
     }
   ]
 }
 
-function sidebarReference(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: '更新日志',
-      items: [
-        { text: 'changelog', link: 'https://xtspace.yuque.com/fyho0s/kc12yl' }
-      ]
-    }
-  ]
-}
 export const zhSearch: DefaultTheme.AlgoliaSearchOptions['locales'] = {
   zh: {
     placeholder: '搜索文档',
