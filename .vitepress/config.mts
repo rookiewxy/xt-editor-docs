@@ -84,7 +84,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '其他',
       collapsed: false,
       items: [
-        { text: '私有化部署', link: 'docker' }
+        { text: '私有化部署', link: 'docker' },
+        { text: '敬请期待', link: 'stay-tuned' },
       ]
     }
   ]
