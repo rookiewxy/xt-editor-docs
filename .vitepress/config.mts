@@ -70,6 +70,22 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: '前端架构', link: 'frontend-architecture' },
         { text: '后端架构', link: 'backend-architecture' },
       ]
+    },
+    {
+      text: '开发指南',
+      collapsed: false,
+      items: [
+        { text: '新增组件', link: 'component' },
+        { text: '扩展交互', link: 'interactive' },
+        { text: '二次开发', link: 'secondary-development' },
+      ]
+    },
+    {
+      text: '其他',
+      collapsed: false,
+      items: [
+        { text: '私有化部署', link: 'docker' }
+      ]
     }
   ]
 }
