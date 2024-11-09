@@ -61,6 +61,15 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: '平台介绍', link: 'introduction' },
         { text: '快速开始', link: 'quick-start' }
       ]
+    },
+    {
+      text: '架构设计',
+      collapsed: false,
+      items: [
+        { text: '功能架构', link: 'business-architecture' },
+        { text: '前端架构', link: 'frontend-architecture' },
+        { text: '后端架构', link: 'backend-architecture' },
+      ]
     }
   ]
 }
